@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknotes=self.webpackChunknotes||[]).push([[638],{9340:e=>{e.exports=JSON.parse('{"title":"Red-teaming","slug":"/category/red-teaming","permalink":"/docs/category/red-teaming","navigation":{"previous":{"title":"Introduction","permalink":"/docs/intro"},"next":{"title":"Pen Test Checklist","permalink":"/docs/red-teaming/web/pen-test-checklist/"}}}')}}]);

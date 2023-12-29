@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknotes=self.webpackChunknotes||[]).push([[6172],{1990:e=>{e.exports=JSON.parse('{"title":"Disc","slug":"/category/disc","permalink":"/docs/category/disc","navigation":{"previous":{"title":"Translate your site","permalink":"/docs/tutorial-extras/translate-your-site"},"next":{"title":"Device Settings","permalink":"/docs/disc/device-settings/"}}}')}}]);
