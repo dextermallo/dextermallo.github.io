@@ -1,0 +1,628 @@
+# Pen Test Checklist
+
+import ColoredCode from '@site/src/components/ColoredCode';
+
+
+<table>
+<thead>
+    <tr>
+        <th>Category</th>
+        <th>Test ID</th>
+        <th>Test Name</th>
+        <th>Status</th>
+        <th>Notes</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td class="category" rowspan="10">Information Gathering</td>
+        <td class="test-id">WSTG-INFO-01</td>
+        <td class="test-name">Conduct Search Engine Discovery and Reconnaissance for Information Leakage</td>
+        <td class="status"><ColoredCode color="green">PASSED</ColoredCode></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INFO-02</td>
+        <td class="test-name">Fingerprint Web Server</td>
+        <td class="status"><ColoredCode color="yellow">DONE</ColoredCode></td>
+        <td class="notes">`nikto`</td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INFO-03</td>
+        <td class="test-name">Review Webserver Metafiles for Information Leakage</td>
+        <td class="status"></td>
+        <td class="notes">`robots.txt`, `sitemap.xml`</td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INFO-04</td>
+        <td class="test-name">Enumerate Applications on Webserver</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INFO-05</td>
+        <td class="test-name">Review Webpage Content for Information Leakage</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INFO-06</td>
+        <td class="test-name">Identify Application Entry Points</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INFO-07</td>
+        <td class="test-name">Map Execution Paths Through Application</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INFO-08</td>
+        <td class="test-name">Fingerprint Web Application Framework</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INFO-09</td>
+        <td class="test-name">Fingerprint Web Application</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INFO-10</td>
+        <td class="test-name">Map Application Architecture</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="category" rowspan="12">Configuration and Deploy Management Testing</td>
+        <td class="test-id">WSTG-CONF-01</td>
+        <td class="test-name">Test Network Infrastructure Configuration</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CONF-02</td>
+        <td class="test-name">Test Application Platform Configuration</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CONF-03</td>
+        <td class="test-name">Test File Extensions Handling for Sensitive Information</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CONF-04</td>
+        <td class="test-name">Review Old Backup and Unreferenced Files for Sensitive Information</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CONF-05</td>
+        <td class="test-name">Enumerate Infrastructure and Application Admin Interfaces</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CONF-06</td>
+        <td class="test-name">Test HTTP Methods</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CONF-07</td>
+        <td class="test-name">Test HTTP Strict Transport Security</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CONF-08</td>
+        <td class="test-name">Test RIA Cross Domain Policy</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CONF-09</td>
+        <td class="test-name">Test File Permission</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CONF-10</td>
+        <td class="test-name">Test for Subdomain Takeover</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CONF-11</td>
+        <td class="test-name">Test Cloud Storage</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CONF-12</td>
+        <td class="test-name">Testing for Content Security Policy</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="category" rowspan="5">Identity Management Testing</td>
+        <td class="test-id">WSTG-IDNT-01</td>
+        <td class="test-name">Test Role Definitions</td>
+        <td class="status"></td>
+        <td clas="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-IDNT-02</td>
+        <td class="test-name">Test User Registration Process</td>
+        <td class="status"></td>
+        <td clas="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-IDNT-03</td>
+        <td class="test-name">Test Account Provisioning Process</td>
+        <td class="status"></td>
+        <td clas="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-IDNT-04</td>
+        <td class="test-name">Testing for Account Enumeration and Guessable User Account</td>
+        <td class="status"></td>
+        <td clas="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-IDNT-05</td>
+        <td class="test-name">Testing for Weak or Unenforced Username Policy</td>
+        <td class="status"></td>
+        <td clas="notes"></td>
+    </tr>
+    <tr>
+        <td class="category" rowspan="10">Authentication Testing</td>
+        <td class="test-id">WSTG-ATHN-01</td>
+        <td class="test-name">Testing for Credentials Transported over an Encrypted Channel</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ATHN-02</td>
+        <td class="test-name">Testing for Default Credentials</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ATHN-03</td>
+        <td class="test-name">Testing for Weak Lock Out Mechanism</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ATHN-04</td>
+        <td class="test-name">Testing for Bypassing Authentication Schema</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ATHN-05</td>
+        <td class="test-name">Testing for Vulnerable Remember Password</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ATHN-06</td>
+        <td class="test-name">Testing for Browser Cache Weakness</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ATHN-07</td>
+        <td class="test-name">Testing for Weak Password Policy</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ATHN-08</td>
+        <td class="test-name">Testing for Weak Security Question Answer</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ATHN-09</td>
+        <td class="test-name">Testing for Weak Password Change or Reset Functionalities</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ATHN-10</td>
+        <td class="test-name">Testing for Weaker Authentication in Alternative Channel</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="category" rowspan="4">Authorization Testing</td>
+        <td class="test-id">WSTG-ATHZ-01</td>
+        <td class="test-name">Testing Directory Traversal File Include</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ATHZ-02</td>
+        <td class="test-name">Testing for Bypassing Authorization Schema</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ATHZ-03</td>
+        <td class="test-name">Testing for Privilege Escalation</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ATHZ-04</td>
+        <td class="test-name">Testing for Insecure Direct Object References</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="category" rowspan="10">Session Management Testing</td>
+        <td class="test-id">WSTG-SESS-01</td>
+        <td class="test-name">Testing for Session Management Schema</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-SESS-02</td>
+        <td class="test-name">Testing for Cookies Attributes</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-SESS-03</td>
+        <td class="test-name">Testing for Session Fixation</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-SESS-04</td>
+        <td class="test-name">Testing for Exposed Session Variables</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-SESS-05</td>
+        <td class="test-name">Testing for Cross Site Request Forgery</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-SESS-06</td>
+        <td class="test-name">Testing for Logout Functionality</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-SESS-07</td>
+        <td class="test-name">Testing Session Timeout</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-SESS-08</td>
+        <td class="test-name">Testing for Session Puzzling</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-SESS-09</td>
+        <td class="test-name">Testing for Session Hijacking</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-SESS-10</td>
+        <td class="test-name">Testing JSON Web Tokens</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="category" rowspan="19">Input Validation Testing</td>
+        <td class="test-id">WSTG-INPV-01</td>
+        <td class="test-name">Testing for Reflected Cross Site Scripting</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-02</td>
+        <td class="test-name">Testing for Stored Cross Site Scripting</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-03</td>
+        <td class="test-name">Testing for HTTP Verb Tampering</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-04</td>
+        <td class="test-name">Testing for HTTP Parameter pollution</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-05</td>
+        <td class="test-name">Testing for SQL Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-06</td>
+        <td class="test-name">Testing for LDAP Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-07</td>
+        <td class="test-name">Testing for XML Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-08</td>
+        <td class="test-name">Testing for SSI Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-09</td>
+        <td class="test-name">Testing for XPath Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-10</td>
+        <td class="test-name">Testing for IMAP SMTP Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-11</td>
+        <td class="test-name">Testing for Code Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-12</td>
+        <td class="test-name">Testing for Command Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-13</td>
+        <td class="test-name">Testing for Format String Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-14</td>
+        <td class="test-name">Testing for Incubated Vulnerabilities</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-15</td>
+        <td class="test-name">Testing for HTTP Splitting Smuggling</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-16</td>
+        <td class="test-name">Testing for HTTP Incoming Requests</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-17</td>
+        <td class="test-name">Testing for Host Header Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-18</td>
+        <td class="test-name">Testing for Server-Side Template Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-INPV-19</td>
+        <td class="test-name">Testing for Server-Side Request Forgery</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="category" rowspan="2">Error Handling</td>
+        <td class="test-id">WSTG-ERRH-01</td>
+        <td class="test-name">Testing for Improper Error Handling</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-ERRH-02</td>
+        <td class="test-name">Testing for Stack Traces</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="category" rowspan="4">Cryptography</td>
+        <td class="test-id">WSTG-CRYP-01</td>
+        <td class="test-name">Testing for Weak Transport Layer Security</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CRYP-02</td>
+        <td class="test-name">Testing for Padding Oracle</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CRYP-03</td>
+        <td class="test-name">Testing for Sensitive Information Sent Via Unencrypted Channels</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CRYP-04</td>
+        <td class="test-name">Testing for Weak Encryption</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="category" rowspan="9">Business Logic Testing</td>
+        <td class="test-id">WSTG-BUSL-01</td>
+        <td class="test-name">Test Business Logic Data Validation</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-BUSL-02</td>
+        <td class="test-name">Test Ability to Forge Requests</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-BUSL-03</td>
+        <td class="test-name">Test Integrity Checks</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-BUSL-04</td>
+        <td class="test-name">Test for Process Timing</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-BUSL-05</td>
+        <td class="test-name">Test Number of Times a Function Can Be Used Limits</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-BUSL-06</td>
+        <td class="test-name">Testing for the Circumvention of Work Flows</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-BUSL-07</td>
+        <td class="test-name">Test Defenses Against Application Misuse</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-BUSL-08</td>
+        <td class="test-name">Test Upload of Unexpected File Types</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-BUSL-09</td>
+        <td class="test-name">Test Upload of Malicious Files</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="category" rowspan="13">Client-side Testing</td>
+        <td class="test-id">WSTG-CLNT-01</td>
+        <td class="test-name">Testing for DOM Based Cross Site Scripting</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CLNT-02</td>
+        <td class="test-name">Testing for JavaScript Execution</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CLNT-03</td>
+        <td class="test-name">Testing for HTML Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CLNT-04</td>
+        <td class="test-name">Testing for Client-Side URL Redirect</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CLNT-05</td>
+        <td class="test-name">Testing for CSS Injection</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CLNT-06</td>
+        <td class="test-name">Testing for Client-Side Resource Manipulation</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CLNT-07</td>
+        <td class="test-name">Test Cross Origin Resource Sharing</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CLNT-08</td>
+        <td class="test-name">Testing for Cross Site Flashing</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CLNT-09</td>
+        <td class="test-name">Testing for Clickjacking</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CLNT-10</td>
+        <td class="test-name">Testing WebSockets</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CLNT-11</td>
+        <td class="test-name">Test Web Messaging</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CLNT-12</td>
+        <td class="test-name">Test Browser Storage</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="test-id">WSTG-CLNT-13</td>
+        <td class="test-name">Testing for Cross Site Script Inclusion</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+    <tr>
+        <td class="category" rowspan="1">API Testing</td>
+        <td class="test-id">WSTG-APIT-01</td>
+        <td class="test-name">Testing GraphQL</td>
+        <td class="status"></td>
+        <td class="notes"></td>
+    </tr>
+</tbody>
+</table>
+
+
+## Reference
+- [OWASP/wstg](https://github.com/OWASP/wstg/blob/master/checklists/checklist.md)
